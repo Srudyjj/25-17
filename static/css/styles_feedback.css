@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'ditedregular';
+    src: url('../fonts/dited-webfont.eot');
+    src: url('../fonts/dited-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dited-webfont.woff2') format('woff2'),
+         url('../fonts/dited-webfont.woff') format('woff'),
+         url('../fonts/dited-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Css reset */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* My stiles */
+html,body{
+    height: 100%;
+}
+ .wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+    margin-bottom: -200px;
+    min-height: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%,rgb(0, 0, 0) 50%,  rgb(255, 255, 255) 100%);
+ }
+
+ .footer{
+    width: 1200px;
+    margin: 0 auto;
+    height: 200px;
+    background: linear-gradient(to top, blue 0%, white 70%, blue 100%)
+}
+
+h1{
+    font-family: 'ditedregular';
+    text-align: center;
+    font-size: 100px;
+    color: burlywood;  
+}
+ 
+form{
+    margin: 0 auto;
+    width: 800px;
+    padding: 30px;
+    position: relative;
+    
+
+}
+
+textarea{
+    min-width:500px;
+    max-width: 600px; 
+    min-height: 200px;
+    transition: all 1s ease;
+    background: burlywood;
+    padding: 10px;
+}
+
+textarea:focus{
+    outline-offset: 30px;
+    outline: 8px dotted red;
+}
+
+.buttom2{
+    word-wrap: break-word;
+    width: 25px;
+    background: radial-gradient(rgb(253, 4, 4), rgba(255, 8, 8, 0.486));
+    position: absolute;
+    top: 100px;
+    left: 0;
+    color: cornsilk;
+    
+}
+
+
+.buttom1{
+    background: radial-gradient(rgb(0, 255, 0), rgba(0, 255, 0, 0.486));
+    position: absolute;
+    bottom: 7px;
+    left: 450px;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    position: absolute;
+    cursor: pointer;
+    padding: 5px 10px 5px 15px;
+    width: 300px;
+    color: black;
+    background: linear-gradient(to top, greenyellow 0%, white 70%, greenyellow 100%);
+    border: 3px solid chocolate;
+    border-radius: 50px 5px;
+
+}
+
+select:focus{
+    outline: none;
+}
+
+.select-box{
+    position: relative;
+    height: 31px;
+    width: 300px;
+    margin-bottom: 20px;
+    
+}
+
+.select-box::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 10px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid black;
+    top: 10px;
+    right: 20px;
+    pointer-events: none;
+    box-sizing: border-box;
+    z-index: 1;
+    transition: all 1s ease;
+}
+.select-box:hover::before{
+    width: 10px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid blue;
+}
+
+.select-box:active::before{
+    width: 10px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid red;
+    transform: rotate(180deg);
+}
+
+select>option {
+    background: greenyellow;
+    cursor: pointer;
+}
+
+input[type="range"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    transform: rotate(90deg);
+    width: 200px;
+    height: 15px;
+    background: linear-gradient(to left,red 0%,green 100%);
+    outline: none;
+    border-radius: 10px;
+    position: absolute;
+    top:170px;
+    right: 0;
+    cursor: pointer;
+}
+
+#thumb::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    background: linear-gradient(to left, black 0%,
+    rgba(0, 0, 0, 0.5) 50%, white 100%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[name="qqq"]{
+    display: none;
+}
+
+label{
+    display: block;
+    color: rgb(0, 255, 0);
+}
+
+input[name="qqq"]+label{
+	padding-left: 40px;
+    position: relative;
+    margin: 40px 0;
+    cursor: pointer;
+}
+
+input[name="qqq"]+label:before{
+	content: "";
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: -7px;
+    left: 0;
+    background: rgba(255, 0, 0, 0.7);
+    border: 1px solid grey;
+    border-radius: 50%;
+    
+}
+
+input[name="qqq"]:checked+label:after{
+	content: "";
+	width: 20px;
+	height: 10px;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 0;
+    left: 2px;
+    border-left: 2px solid white;
+	border-bottom: 2px solid white;
+}
+
+
+
+
+
+
+

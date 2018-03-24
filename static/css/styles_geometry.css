@@ -1,0 +1,209 @@
+/* Css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.gap {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+	border: 22px solid black;
+	position: absolute;
+	box-sizing: border-box;	  
+}
+.nut{
+    width: 100px;
+	height: 100px;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	top: 20px;
+	left: 20px;
+	animation-duration: 10s;
+	animation-name: rotate;
+	animation-iteration-count: infinite;
+
+}
+
+
+@keyframes rotate {
+	from {
+		left: 0;
+		transform: rotate(1deg)
+	}
+
+	to {
+		left:95%;
+		transform: rotate(750deg)
+	}
+}
+
+.nut:after{
+	content: "";
+	display: block;
+	width: 100px;
+	height: 100px;
+	border: 20px solid black;
+	transform: rotate(45deg);
+	position: absolute;
+	box-sizing: border-box;
+
+}
+
+.wrench{
+	width: 400px;
+	height: 400px;
+	position: relative;
+}
+
+.wrench-head{
+	position: absolute;
+	top: -14px;
+	right: 38px;
+	width: 80px;
+	height: 100px;
+	border-left: 80px solid green;
+	border-top: 50px solid green;
+	border-bottom: 50px solid green;
+
+}
+.wrench-head:before{
+	position: absolute;
+	content: "";
+	display: block;
+	width: 80px;
+	height: 80px;
+	border-left: 30px solid green;
+	border-top: 30px solid green;
+	top: -4px;
+	left: -40px;
+	transform: rotate(-45deg);
+}
+
+.wrench-head-wrapper{
+	width: 170px;
+	height: 170px;
+	border-radius: 50%;
+	position: relative;
+	left: 267px;
+	top: -79px;
+	overflow: hidden;
+	transform: rotate(-45deg);
+}
+
+.wrench-handle{
+	width: 80px;
+	height: 300px;
+	background: green;
+	
+	position: absolute;
+	transform: rotate(45deg);
+	left: 163px;
+	top: 108px;
+}
+.wrench-handle:before{
+	position: absolute;
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius:  0 0 50% 50%;
+    border: 30px solid green;
+	top: 295px;
+}
+
+.screw{
+	width: 80px;
+	height: 300px;
+	background: linear-gradient(175deg,
+			grey 10%,
+			black 10%, black 15%,
+			grey 15%, grey 20%, 
+			black 20%, black 25%, 
+			grey 25%, grey 30%, 
+			black 30%, black 35%, 
+			grey 35%, grey 40%, 
+			black 40%, black 45%,
+			grey 45%, grey 50%, 
+			black 50%, black 55%, 
+			grey 55%, grey 60%, 
+			black 60%, black 65%, 
+			grey 65%, grey 70%, 
+			black 70%, black 75%,
+			grey 75%, grey 80%, 
+			black 80%, black 85%, 
+			grey 85%, grey 90%, 
+			black 90%, black 95%, 
+			grey 95%);
+	position: relative;
+	left: 600px;
+	top: 50px;
+	border-radius:  0 0 10% 10%;
+}
+
+.screw:before{
+	position: absolute;
+	content: "";
+	display: block;
+	width: 100px;
+	height: 50px;
+	border-radius:  50% 0 0 0 ;
+	top: -24px;
+	left: -68px;
+	background: grey;
+}
+
+.screw:after{
+	position: absolute;
+	content: "";
+	display: block;
+	width: 100px;
+	height: 50px;
+	border-radius:  0 50% 0 0 ;
+	top: -24px;
+	left: 52px;
+	background: grey;
+}

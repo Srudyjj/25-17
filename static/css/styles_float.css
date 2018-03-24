@@ -1,0 +1,297 @@
+/* Css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* My stiles */
+
+.wrapper {
+    background-color: black;
+    margin: 40px auto 0;
+    width: 1200px;
+}
+ 
+.clear:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.float {
+    float: left;
+    width: 400px;
+    height: 400px;
+    outline: 1px solid black;
+    font-size: 100px;
+    text-align: center;
+}
+
+.auxilary-float {
+    width: 800px;
+}
+
+#infloat1 {
+    background-color: red;
+}
+
+#infloat2 {
+    background-color: green;
+}
+
+#infloat3 {
+    background-color:deeppink ;
+}
+
+#infloat4 {
+    background-color: yellow;
+    width: 800px;
+}
+
+#infloat5 {
+    background-color:tomato ;
+    height: 200px;
+    width: 400px;
+}
+
+#infloat6 {
+    background-color:mediumseagreen;
+    height: 200px;
+    width: 400px;
+}
+
+#infloat7 {
+    background-color:navajowhite;
+    height: 133.34px;   
+}
+
+#infloat8 {
+    background-color: orangered;
+    height: 133.33px;
+}
+
+#infloat9 {
+    background-color:gold;
+    height: 133.34px;  
+}
+
+#infloat10 {
+    background-color:lime;
+    height: 200px;
+    width: 800px;
+}
+
+#infloat11 {
+    background-color: aqua;
+    height: 200px;
+    width: 800px;
+}
+
+#infloat12 {
+    background-color:darkgrey   ;
+    height: 266.67px;
+    width: 800px;
+}
+
+#infloat13 {
+    background-color: rgb(218, 94, 94);
+    height: 133.33px;
+    width: 266.66px
+}
+
+#infloat14 {
+    background-color: purple;
+    height: 133.33px;
+    width: 266.66px
+}
+
+#infloat15 {
+    background-color:darkturquoise;
+    height: 133.33px;
+    width: 266.66px
+}
+
+#infloat16 {
+    background-color: greenyellow;
+    height: 200px;
+}
+
+#infloat17 {
+    background-color: bisque;
+    height: 200px;
+}
+
+#infloat18 {
+    background-color: teal;
+}
+
+#infloat19 {
+    background-color: green;
+}
+
+#infloat20 {
+    background-color: blue;
+    height: 200px;
+}
+
+#infloat21 {
+    background-color: chartreuse;
+    height: 200px;
+    width: 200px;
+}
+
+#infloat22 {
+    background-color:forestgreen;
+    height: 100px;
+    width: 200px
+}
+
+#infloat23 {
+    background-color: springgreen;
+    height: 100px;
+    width: 100px;
+}
+
+#infloat24 {
+    background-color:olivedrab;
+    height: 100px;
+    width: 100px;
+}
+
+#infloat25 {
+    background-color:orchid;
+    height: 200px;
+}
+
+#infloat26 {
+    background-color:mediumpurple;
+    height: 200px;
+}
+
+#infloat27 {
+    background-color:slateblue;
+    height: 200px;
+    width: 800px;
+}
+
+#infloat28 {
+    background-color:lavender;
+}
+
+#infloat29 {
+    background-color:orangered;
+}
+
+#infloat30 {
+    background-color:orange;
+}
+
+#infloat31 {
+    background-color: lightsalmon;
+}
+
+.top-menu{
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	
+
+}
+
+.top-menu-wrapper{
+	position: fixed;
+	text-align: center;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.top-menu li{
+	display: inline-block;
+	position: relative;
+}
+
+.top-menu li a{
+	display: block;
+	padding: 10px 60px;
+	background: rgba(165, 42, 42, 0.7);
+	text-decoration: none;
+	font-size: 20px;
+	color: bisque;
+	text-transform: uppercase;
+	
+}
+
+.top-menu li:hover{
+	background: rgb(145, 33, 33);
+}
+
+.top-menu ul{
+	position:absolute;
+	display: none;
+	left: 0;
+	top: 100%;
+	
+}
+
+.top-menu ul li{
+	display: block;
+}
+
+.top-menu li:hover>ul{
+	display: block;
+	 
+}
+
+.top-menu ul ul{
+	position:absolute;
+	display: none;
+	left: 100%;
+	top: 0;
+
+	
+}
+
+.top-menu li ul a{
+	padding: 10px 10px;
+}
